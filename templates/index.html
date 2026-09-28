@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduGenie | AI Learning Assistant</title>
+<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+</head>
+<body>
+<header><div class="brand"><b>E</b> EduGenie</div><span>● Gemini AI Learning Assistant</span></header>
+<main>
+<section class="hero"><small>✨ Google Gemini Powered</small><h1>Learn smarter with <em>EduGenie</em></h1><p>Ask questions, explain concepts, create quizzes, summarize content, and build a personalized learning path.</p></section>
+<section class="card">
+<h2>What would you like to learn?</h2><p class="muted">Select a task and enter your topic, question, or passage.</p>
+<label>Learning task</label>
+<select id="task">
+<option value="explain">Explain a concept</option><option value="qa">Ask a question (Q&A)</option><option value="quiz">Generate a quiz</option><option value="summarize">Summarize text</option><option value="learn/recommendations">Recommend a learning path</option>
+</select>
+<label>Your input</label><textarea id="inputText" placeholder="Example: Explain the Pythagoras Theorem in simple words..."></textarea>
+<div class="actions"><button id="clearBtn">Clear</button><button id="submitBtn" class="primary">✨ Ask EduGenie</button></div>
+<div id="result" class="result hidden"><h3>EduGenie Response</h3><div id="resultText"></div></div>
+</section>
+<section class="features"><article>💡<h3>Simple Explanations</h3><p>Break complex topics into easy language.</p></article><article>❓<h3>Smart Q&A</h3><p>Get concise academic answers.</p></article><article>📝<h3>Interactive Quizzes</h3><p>Generate three MCQs with four options.</p></article><article>🧭<h3>Learning Paths</h3><p>Progress from beginner to advanced.</p></article></section>
+</main><footer>EduGenie • AI-powered personalized learning</footer>
+<script src="{{ url_for('static', path='script.js') }}"></script>
+</body></html>
