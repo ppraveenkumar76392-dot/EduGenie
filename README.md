@@ -10,3 +10,5 @@ uvicorn main:app --reload
 4. Open http://127.0.0.1:8000
 
 Never upload `.env` to GitHub.
+
+DEMO LINK - https://edugenie-mn9h.onrender.com
